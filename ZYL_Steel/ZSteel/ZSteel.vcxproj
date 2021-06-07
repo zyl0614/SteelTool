@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{65B04814-0658-4A78-BA3C-8832AA0B4068}</ProjectGuid>
+    <RootNamespace>ZSteel</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\run\$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\obj\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(solutiondir)..\inc\;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(solutiondir)..\inc\;$(solutiondir)..\inc\vtk-8.1;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderOutputFile>C:\temp\$(TargetName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\lib\$(PlatformName)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SteelIOTool.lib;SteelData.lib;vtkalglib-8.1.lib;vtkChartsCore-8.1.lib;vtkCommonColor-8.1.lib;vtkCommonComputationalGeometry-8.1.lib;vtkCommonCore-8.1.lib;vtkCommonDataModel-8.1.lib;vtkCommonExecutionModel-8.1.lib;vtkCommonMath-8.1.lib;vtkCommonMisc-8.1.lib;vtkCommonSystem-8.1.lib;vtkCommonTransforms-8.1.lib;vtkDICOMParser-8.1.lib;vtkDomainsChemistry-8.1.lib;vtkDomainsChemistryOpenGL2-8.1.lib;vtkexoIIc-8.1.lib;vtkexpat-8.1.lib;vtkFiltersAMR-8.1.lib;vtkFiltersCore-8.1.lib;vtkFiltersExtraction-8.1.lib;vtkFiltersFlowPaths-8.1.lib;vtkFiltersGeneral-8.1.lib;vtkFiltersGeneric-8.1.lib;vtkFiltersGeometry-8.1.lib;vtkFiltersHybrid-8.1.lib;vtkFiltersHyperTree-8.1.lib;vtkFiltersImaging-8.1.lib;vtkFiltersModeling-8.1.lib;vtkFiltersParallel-8.1.lib;vtkFiltersParallelImaging-8.1.lib;vtkFiltersPoints-8.1.lib;vtkFiltersProgrammable-8.1.lib;vtkFiltersSelection-8.1.lib;vtkFiltersSMP-8.1.lib;vtkFiltersSources-8.1.lib;vtkFiltersStatistics-8.1.lib;vtkFiltersTexture-8.1.lib;vtkFiltersTopology-8.1.lib;vtkFiltersVerdict-8.1.lib;vtkfreetype-8.1.lib;vtkGeovisCore-8.1.lib;vtkgl2ps-8.1.lib;vtkglew-8.1.lib;vtkhdf5-8.1.lib;vtkhdf5_hl-8.1.lib;vtkImagingColor-8.1.lib;vtkImagingCore-8.1.lib;vtkImagingFourier-8.1.lib;vtkImagingGeneral-8.1.lib;vtkImagingHybrid-8.1.lib;vtkImagingMath-8.1.lib;vtkImagingMorphological-8.1.lib;vtkImagingSources-8.1.lib;vtkImagingStatistics-8.1.lib;vtkImagingStencil-8.1.lib;vtkInfovisCore-8.1.lib;vtkInfovisLayout-8.1.lib;vtkInteractionImage-8.1.lib;vtkInteractionStyle-8.1.lib;vtkInteractionWidgets-8.1.lib;vtkIOAMR-8.1.lib;vtkIOCore-8.1.lib;vtkIOEnSight-8.1.lib;vtkIOExodus-8.1.lib;vtkIOExport-8.1.lib;vtkIOExportOpenGL2-8.1.lib;vtkIOGeometry-8.1.lib;vtkIOImage-8.1.lib;vtkIOImport-8.1.lib;vtkIOInfovis-8.1.lib;vtkIOLegacy-8.1.lib;vtkIOLSDyna-8.1.lib;vtkIOMINC-8.1.lib;vtkIOMovie-8.1.lib;vtkIONetCDF-8.1.lib;vtkIOParallel-8.1.lib;vtkIOParallelXML-8.1.lib;vtkIOPLY-8.1.lib;vtkIOSQL-8.1.lib;vtkIOTecplotTable-8.1.lib;vtkIOVideo-8.1.lib;vtkIOXML-8.1.lib;vtkIOXMLParser-8.1.lib;vtkjpeg-8.1.lib;vtkjsoncpp-8.1.lib;vtklibharu-8.1.lib;vtklibxml2-8.1.lib;vtklz4-8.1.lib;vtkmetaio-8.1.lib;vtkNetCDF-8.1.lib;vtknetcdfcpp-8.1.lib;vtkoggtheora-8.1.lib;vtkParallelCore-8.1.lib;vtkpng-8.1.lib;vtkproj4-8.1.lib;vtkRenderingAnnotation-8.1.lib;vtkRenderingContext2D-8.1.lib;vtkRenderingContextOpenGL2-8.1.lib;vtkRenderingCore-8.1.lib;vtkRenderingFreeType-8.1.lib;vtkRenderingGL2PSOpenGL2-8.1.lib;vtkRenderingImage-8.1.lib;vtkRenderingLabel-8.1.lib;vtkRenderingLOD-8.1.lib;vtkRenderingOpenGL2-8.1.lib;vtkRenderingVolume-8.1.lib;vtkRenderingVolumeOpenGL2-8.1.lib;vtksqlite-8.1.lib;vtksys-8.1.lib;vtktiff-8.1.lib;vtkverdict-8.1.lib;vtkViewsContext2D-8.1.lib;vtkViewsCore-8.1.lib;vtkViewsInfovis-8.1.lib;vtkzlib-8.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LoadProjectDlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ZSteel.h" />
+    <ClInclude Include="ZSteelDoc.h" />
+    <ClInclude Include="ZSteelView.h" />
+    <ClInclude Include="zTestLoadByVtk.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LoadProjectDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ZSteel.cpp" />
+    <ClCompile Include="ZSteelDoc.cpp" />
+    <ClCompile Include="ZSteelView.cpp" />
+    <ClCompile Include="zTestLoadByVtk.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ZSteel.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\buttons.bmp" />
+    <Image Include="res\filelarge.bmp" />
+    <Image Include="res\filesmall.bmp" />
+    <Image Include="res\info.bmp" />
+    <Image Include="res\main.bmp" />
+    <Image Include="res\nav_large.bmp" />
+    <Image Include="res\nav_large_hc.bmp" />
+    <Image Include="res\pages.bmp" />
+    <Image Include="res\pages_hc.bmp" />
+    <Image Include="res\pages_small.bmp" />
+    <Image Include="res\pages_small_hc.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\writelarge.bmp" />
+    <Image Include="res\writesmall.bmp" />
+    <Image Include="res\ZSteel.ico" />
+    <Image Include="res\ZSteelDoc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ribbon.mfcribbon-ms" />
+    <None Include="res\ZSteel.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ZSteel.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

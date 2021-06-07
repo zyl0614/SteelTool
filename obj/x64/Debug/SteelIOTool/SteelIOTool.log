@@ -1,0 +1,36 @@
+﻿  stdafx.cpp
+  zIOTool.cpp
+E:\code\SteelTool\SteelTool\inc\ProjectServer.h(43): warning C4251: “ProjectServer::beamSegs”: class“std::vector<zBeamSeg,std::allocator<_Ty>>”需要有 dll 接口由 class“ProjectServer”的客户端使用
+          with
+          [
+              _Ty=zBeamSeg
+          ]
+E:\code\SteelTool\SteelTool\inc\ProjectServer.h(44): warning C4251: “ProjectServer::colSegs”: class“std::vector<zColumnSeg,std::allocator<_Ty>>”需要有 dll 接口由 class“ProjectServer”的客户端使用
+          with
+          [
+              _Ty=zColumnSeg
+          ]
+  LoadModelData.cpp
+E:\code\SteelTool\SteelTool\inc\ProjectServer.h(43): warning C4251: “ProjectServer::beamSegs”: class“std::vector<zBeamSeg,std::allocator<_Ty>>”需要有 dll 接口由 class“ProjectServer”的客户端使用
+          with
+          [
+              _Ty=zBeamSeg
+          ]
+E:\code\SteelTool\SteelTool\inc\ProjectServer.h(44): warning C4251: “ProjectServer::colSegs”: class“std::vector<zColumnSeg,std::allocator<_Ty>>”需要有 dll 接口由 class“ProjectServer”的客户端使用
+          with
+          [
+              _Ty=zColumnSeg
+          ]
+  CSqliteDBTool.cpp
+CSqliteDBTool.cpp(61): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+  dllmain.cpp
+  sqlite3.lib(sqlite3.obj) : 找到 MSIL .netmodule 或使用 /GL 编译的模块；正在使用 /LTCG 重新启动链接；将 /LTCG 添加到链接命令行以改进链接器性能
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/LTCG”规范)
+     正在创建库 E:\code\SteelTool\SteelTool\ZYL_Steel\..\lib\x64\SteelIOTool.lib 和对象 E:\code\SteelTool\SteelTool\ZYL_Steel\..\lib\x64\SteelIOTool.exp
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  正在生成代码
+  已完成代码的生成
+sqlite3.lib(sqlite3.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“sqlite3.lib(sqlite3.obj)”或在“E:\code\SteelTool\SteelTool\run\x64\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  SteelIOTool.vcxproj -> E:\code\SteelTool\SteelTool\ZYL_Steel\..\run\x64\Debug\SteelIOTool.dll
+  复制了 0 个文件
